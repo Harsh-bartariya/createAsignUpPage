@@ -3,7 +3,7 @@
 <head><title> Login form </title>
 <style>
 body {background-color: lightblue;}
-h1 {color: maroon;}
+h1 {color: green;}
 button {color: darkgreen;}
 
 input[type=firstName], input[type=lastName], input[type=email], input[type=phoneNumber], input[type=birthday], input[type=gender] {
@@ -16,7 +16,20 @@ input[type=firstName], input[type=lastName], input[type=email], input[type=phone
 
 }
 
+.container {
+	padding: 40px;
+}
 
+button {
+	background-color: black;
+	color: yellow;
+	padding:14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 10%
+
+}
 
 </style>
 </head>
@@ -27,6 +40,7 @@ input[type=firstName], input[type=lastName], input[type=email], input[type=phone
 
 <body>
 <form action="action.php" method="POST">
+<div class="container">
 
 <input type="firstName" placeholder="Enter First Name" name="firstName"><br>
 <br>
@@ -43,7 +57,7 @@ input[type=firstName], input[type=lastName], input[type=email], input[type=phone
 <button>Sign Up</button>
 <button>Cancel</button> 
 
-
+</div>
 </body>
 </html>
 
