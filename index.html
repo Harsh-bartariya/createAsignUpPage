@@ -2,8 +2,11 @@
 <html>
 <head><title> Login form </title>
 <style>
-body {background-color: lightblue;}
-h1 {color: green;}
+body {
+background-color: lightblue;
+background-image: url('qq.jpg');
+}
+h1 {color: white;}
 button {color: darkgreen;}
 
 input[type=firstName], input[type=lastName], input[type=email], input[type=phoneNumber], input[type=birthday], input[type=gender] {
@@ -20,43 +23,49 @@ input[type=firstName], input[type=lastName], input[type=email], input[type=phone
 	padding: 40px;
 }
 
-button {
-	background-color: black;
-	color: yellow;
-	padding:14px 20px;
-	margin: 8px 0;
-	border: none;
-	cursor: pointer;
-	width: 10%
-
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 10px;
+  cursor: pointer;
 }
+#me{
+background-color: #f44336;
+}
+.button4 {border-radius: 12px;}
+.button4 {border-radius: 12px;}
 
 </style>
 </head>
 
 
 
-<h1>Sign Up Form</h1>
+<center><h1>Sign Up Form</h1></center>
 
 <body>
 <form action="action.php" method="POST">
 <div class="container">
 
-<input type="firstName" placeholder="Enter First Name" name="firstName"><br>
+<center><input type="firstName" placeholder="Enter First Name" name="firstName"><br></center>
 <br>
-<input type="lastName" placeholder="Enter Last Name" name="lastName"><br>
+<center><input type="lastName" placeholder="Enter Last Name" name="lastName"><br></center>
 <br>
-<input type="email" placeholder="E-Mail Address" name="email"><br>
+<center><input type="email" placeholder="E-Mail Address" name="email"><br></center>
 <br>
-<input type="phoneNumber" placeholder="Enter Phone Number" name="phoneNumber"><br>
+<center><input type="phoneNumber" placeholder="Enter Phone Number" name="phoneNumber"><br></center>
 <br>
-<input type="birthday" placeholder="Your Birthday" name="birthday"><br>
+<center><input type="birthday" placeholder="Your Birthday" name="birthday"><br></center>
 <br>
-<input type="gender" placeholder="Your Gender" name="gender"><br>
+<center><input type="gender" placeholder="Your Gender" name="gender"><br></center>
 <br>
-<button>Sign Up</button>
-<button>Cancel</button> 
-
+<button class="button button4">Sign Up</button>
+<button class="button button4" id="me">Cancel</button>
 </div>
 </body>
 </html>
